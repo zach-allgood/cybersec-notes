@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pentesting/05 - Cleaning Tracks/00 Cleaning Tracks Methodology.md",
+                "file": "Fuff.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3093fd5d1c44bca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pentesting/05 - Cleaning Tracks/00 Cleaning Tracks Methodology.md",
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pentesting/05 - Cleaning Tracks/00 Cleaning Tracks Methodology.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pentesting/05 - Cleaning Tracks/00 Cleaning Tracks Methodology.md"
+                "file": "README.md"
               }
             }
           }
@@ -160,10 +172,12 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "616e55068fed1da6",
+  "active": "e3093fd5d1c44bca",
   "lastOpenFiles": [
-    "Pentesting/04 - Maintaining Access/00 Maintaining Access Methodology.md",
+    "Fuff.md",
+    "README.md",
     "Pentesting/05 - Cleaning Tracks/00 Cleaning Tracks Methodology.md",
+    "Pentesting/04 - Maintaining Access/00 Maintaining Access Methodology.md",
     "Pentesting/03 - Exploitation/00 Exploitation Methodology.md",
     "Pentesting/02 - Enumeration/Tools",
     "Pentesting/04 - Maintaining Access/Untitled",
@@ -176,7 +190,6 @@
     "Pentesting/03 - Exploitation",
     "02 Exploitation Methodology.md",
     "Pentesting/Pentesting notes template.md",
-    "Fuff.md",
     "Pentesting/02 - Enumeration/Tools/nmap.md",
     "Pentesting/02 - Enumeration/Tools/AutoRecon.md",
     "Pentesting/02 - Enumeration",
