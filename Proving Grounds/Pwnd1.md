@@ -1,0 +1,25 @@
+- Ran nmap
+- Found port 80
+- Went to homepage, found site was compromised
+- Ran ffuf on site to get the following paths:
+	- /nothing
+	- /hidden_text
+	- /robots.txt
+- /nothing showed nothing of use
+- /hidden_text shows secret.dic
+- Running ffuf using secret.dic wordlist found /pwned.vuln
+- After viewing page source for /pwned.vuln, found login for FTP
+- Logging into FTP found notes.txt and id_rsa
+- notes.txt gave name of user, SSH in using id_rsa and name as user
+- This gave us a shell, nothing of note in the user directory, but in /home found messenger.sh
+- Inspecting messenger.sh found it took input of whatever your message is and output that to /dev/null
+- Was able to get /bin/bash to run but only as current user
+- ./linpeas.sh ran and found that current user can run messenger.sh as other non-root user
+- Ran `sudo -u user /home/messenger.sh`
+- In message, ran ``/bin/bash -p`
+- `whoami` returns new user
+- Ran linpeas as new user, found docker group assigned
+- Ran the following docker command to privesc and gain root access:
+	- `docker run -v /:/mnt --rm -it alpine chroot /mnt sh`
+- From here we're root and have the whole server in a docker container
+- Can find root flag in /root
