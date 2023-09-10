@@ -14,3 +14,4 @@
 	- `find / -perm -u=s -type f 2>/dev/null`
 - Found php7.4 and looked for PHP in GTFObins
 - Found privesc for PHP in GTFObins, ran on www-data, got root shell
+- Found root flag in /root/flag.txt and that put box to 100%
